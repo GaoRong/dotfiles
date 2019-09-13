@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="wezm+"
 
 plugins=(git github command-not-found compleat zsh-syntax-highlighting
-    kubectl pip ubuntu sudo osx brew mvn
+    zsh-autosuggestions kubectl pip ubuntu sudo osx brew mvn
     tmux)
 
 source $ZSH/oh-my-zsh.sh

@@ -53,6 +53,9 @@ install_dependence() {
 
 setup_zsh() {
     echo "\033[034m* setup zsh...\033[0m"
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git terminal/zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions terminal/zsh/oh-my-zsh/custom/plugins/zsh-autosuggestions
+
     for i in $HOME/.zshrc $HOME/.oh-my-zsh $HOME/.dir_colors
     do [ -L $i ] && unlink $i
     done
