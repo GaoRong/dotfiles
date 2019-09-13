@@ -1,0 +1,4 @@
+"line number
+set nu
+" search highline  
+set hlsearch 

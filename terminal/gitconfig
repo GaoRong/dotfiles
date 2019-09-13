@@ -1,0 +1,30 @@
+[user]
+	email = gaoronggood@163.com
+	name = gaorong
+[color]
+	ui = true
+    status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[core]
+	excludesfile = /Users/tong/.gitignore_global
+    editor = vim
+	autocrlf = input
+[merge]
+    tool = vimdiff
+[pull]
+    rebase = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
